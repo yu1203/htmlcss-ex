@@ -5,29 +5,31 @@
   .content {
   	margin: 0 auto;
   	width: 300px;
-  	border: 0.2em solid black;
+  	border: solid 0.2em black;
   	overflow: hidden;
   }
 
   p {
-  	font-size: 2em;
-  	font-family: Arial;
-  	display: inline-block;
-  	text-transform: uppercase;
-  	margin: 0;
+  	box-sizing: border-box;
   	width: 50%;
+  	float: left;
+  	text-transform: uppercase;
+  	font-family: Arial;
+  	padding: 0.5em;
+  	margin: 0;
+  	font-size: 1.7em;
   }
 
   p.html {
   	background: red;
-  	float: left;
+  	border-right: solid 0.1em black;
   }
 
   p.css {
   	background: green;
-  	float: left;
-  	text-align: right
+  	text-align: right;
   }
+ 
 
 </style>
 </head>
