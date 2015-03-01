@@ -3,59 +3,60 @@
 <head>
 <style>
   body {
-  	margin: 0.5em auto;
-  	width:400px;
+  	margin: 0.5rem auto;
+  	width: 400px;
   }
 
   .header {
-  	border: solid 0.2em black;
+  	border: solid 2px black;
   	overflow: hidden;
   	padding: 0;
   }
 
   p {
-  	font-size: 2em;
+  	font-size: 2rem;
   	font-family: arial;
-  	padding: 0.3em;
+  	padding: 0.5rem;
   }
 
-  #html, #css {
+  .html, .css {
   	float: left ;
   	margin: 0;
   	box-sizing: border-box;
   }
 
-  #html {
+  .html {
   	background: green;
   	text-transform: uppercase;
   	width: 70%;
-  	border-right: solid 0.1em black;
+  	border-right: solid 2px black;
   }
 
-  #css {
+  .css {
   	width: 30%;
   	background: blue;
   }
 
-  .sector {
-  	border: solid 0.2em black;
-  	margin-top: 1em ;
+  .section {
+  	border: solid 2px black;
+  	margin-top: 1rem ;
   }
 
   h1 {
-  	font-size: 3em;
+  	font-size: 3rem;
   	font-family: arial;
   	font-weight: normal;
   	background: red;
-  	border-bottom: solid 0.1em black;
-  	padding: 0.3em;
+  	border-bottom: solid 2px black;
+  	padding: 0.5rem;
   	margin: 0
   }
 
-  #content {
+  .content {
   	background: green;
   	margin: 0;
-  	padding-bottom: 7em;
+  	padding-bottom: 7rem;
+  	text-indent: 2rem;
   }
 
 </style>
@@ -63,12 +64,12 @@
 
 <body>
   <div class="header">
-   <p id="html">html</p>
-   <p id="css">css</p>
+   <p class="html">html</p>
+   <p class="css">css</p>
   </div>
-  <div class="sector">
+  <div class="section">
     <h1>Leung Pak Yu</h1>
-    <p id="content">&nbsp&nbsp I will move to <br>Vanuatu soon</p>
+    <p class="content">I will move to <br>Vanuatu soon</p>
   </div>
 </body>
 </html>
