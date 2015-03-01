@@ -7,7 +7,7 @@
 <style>
   body {
   	margin: 0;
-  	font-family: arial;
+  	font-family: arial, sans-serif;
   }
 
   .header {
@@ -46,12 +46,7 @@
       font-weight: bold;
   }
 
-  .leftcol li a:visited {
-  	text-decoration: none;
-  	color: black;
-  }
-
-  .leftcol li a:link {
+  .leftcol li a:link, .leftcol li a:visited {
   	text-decoration: none;
   	color: black;
   }
@@ -78,25 +73,16 @@
   	width: 276px;
   }
 
-  .fblink{
-  	background: lightgrey;
-  	padding: 0.5rem;
-  	border-radius: 0.7rem;
-  	color: black;
-  	margin: 0 3rem;
-  }
-
-  .fblink a:link{
+  .fblink:link, .fblink:visited{
+      background: lightgrey;
+      color: black;
+      padding: 0.5rem;
+      border-radius: 0.7rem;
+      margin: 0 3rem;
   	text-decoration: none;
-  	color: black;
   }
 
-  .fblink a:visited{
-  	text-decoration: none;
-  	color: black;
-  }
-
-  .fblink:hover {
+  .fblink:hover{
   	background: grey;
   	color: black;
   }
@@ -162,5 +148,4 @@
     <p>Copyright &copy; 2046, The University of Hong Kong. All Rights Reserved.</p>
   </div>
 </body>
-
 </html>
