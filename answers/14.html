@@ -1,23 +1,28 @@
 <html>
 <head>
 <style>
-  .content {
+  body {
     overflow: hidden;
-    border: 2px solid black;
-    border-radius: 10px;
     font-family: sans-serif;
-    width: 800px;
-    margin: 0 auto;
+    margin: 0;
+    height: 100%;
+    background: green;
   }
 
   .section {
     width: 50%;
     float: left;
     box-sizing: border-box;
+    height: 100%;
   }
 
   .left.section {
     border-right: 2px solid black;
+    background: saddlebrown;
+  }
+
+  .right.section {
+    background: red;
   }
 
   h1 {
@@ -30,13 +35,11 @@
     background: red;
     color: white;
   }
-  .right h1 { background: SaddleBrown; }
+  .right h1 { background: saddlebrown; }
 
   .text {
     padding: 1rem;
   }
-  .left .text { background: SaddleBrown; }
-  .right .text { background: red; }
 
   p {
     text-indent: 1rem;
@@ -47,20 +50,18 @@
 </style>
 </head>
 <body>
-  <div class="content">
-    <div class="left section">
-      <h1>LPY</h1>
-      <div class="text">
-        <p>Hi, my name is Leung Pak Yu. I am going back to HKU for grad school.</p>
-      </div>
+  <div class="left section">
+    <h1>LPY</h1>
+    <div class="text">
+      <p>Hi, my name is Leung Pak Yu. I am going back to HKU for grad school.</p>
     </div>
-
-    <div class="right section">
-      <h1>LPY</h1>
-      <div class="text">
-        <p>Yes, that is correct. I love school too much to leave.</p>
-      </div>
-    </div>    
   </div>
+
+  <div class="right section">
+    <h1>LPY</h1>
+    <div class="text">
+      <p>Yes, that is correct. I love school too much to leave.</p>
+    </div>
+  </div>    
 </body>
 </html>
