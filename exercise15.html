@@ -7,7 +7,7 @@
     padding: 0 2rem;
   }
 
-  .cir-container {
+  .circle-container {
     border: solid 2px black;
     border-radius: 20px;
     width: 120px;
@@ -16,7 +16,7 @@
     float: left;
   }
 
-  .dot1, .dot2 {
+  .dot {
     background: red;
     width: 25px;
     height: 25px;
@@ -25,7 +25,7 @@
     margin: 1rem;
   }
 
-  .dot2 {
+  .right.dot {
     float: right;
   }
 
@@ -58,14 +58,16 @@
     float: right;
     border: solid 2px purple;
     color: purple;
+    border-radius: 5px;
+    background: white;
   }
 </style>	
 </head>
   
 <body>
-  <div class="cir-container">
-    <div class="dot1"></div>
-    <div class="dot2"></div>
+  <div class="circle-container">
+    <div class="left dot"></div>
+    <div class="right dot"></div>
   </div>
   <h1>LPY</h1>
   <textarea name="msg" rows="10">Textarea</textarea>
