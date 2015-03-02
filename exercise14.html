@@ -11,15 +11,46 @@
     display: block;
   }
 
-  .col {
+  .leftcol, .rightcol {
     border-bottom: solid 2px black;
     box-sizing: border-box;
     width: 50%;
     float: left;
   }
 
+  .leftcol {
+    border-right: solid 2px black;
+  }
+
   h1, h2 {
     border-bottom: solid 2px black;
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  h1 {
+    background: red;
+    color: white;
+  }
+
+  h2, .leftsection {
+    background: brown;
+  }
+
+  .leftsection, .rightsection {
+    font-size: 2rem;
+    text-indent: 2rem;
+  }
+
+  p {
+    margin: 0;
+    padding: 2rem;
+  }
+
+  .rightsection {
+    background: red;
   }
 
 </style>
@@ -27,19 +58,19 @@
 
 <body>
 <div class="content">
-  <div class="col">
+  <div class="leftcol">
     <div class="name">
       <h1>LPY</h1>
     </div>
-    <div class="section">
+    <div class="leftsection">
       <p>Hi, my name is Leung Pak Yu. I am going back to HKU for grad school.</p>
     </div>
   </div>
-  <div class="col">
+  <div class="rightcol">
     <div class="name">
       <h2>LPY</h2>
     </div>
-    <div class="section">
+    <div class="rightsection">
       <p>Yes, that is correct. I love school too much to leave.</p>
     </div>
   </div>
