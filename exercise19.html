@@ -3,11 +3,6 @@
 <head>
 <link href="normalize.css" media="all" rel="stylesheet">
 <style>
-  .content {
-    border-bottom: solid 2px black;
-    padding-bottom: 15rem; 
-  }
-
   .square {
     background: red;
     border: solid 2px black;
@@ -20,25 +15,29 @@
   .row {
     text-align: center;
   }
+
+  .bottom {
+    border-top: solid 2px black;
+    position: fixed;
+    bottom: 0;
+  }
 </style>
 </head>
 
 <body>
-  <div class="content">
-    <div class="row">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
-    <div class="row">
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-      <div class="square"></div>
-    </div>
-  </div>  
   <div class="row">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div>
+  <div class="row">
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+  </div> 
+  <div class="row bottom">
     <div class="square"></div>
     <div class="square"></div>
     <div class="square"></div>
