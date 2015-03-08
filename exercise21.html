@@ -12,14 +12,14 @@
     padding: 0.5rem;
   }
 
-  a.homepage, h2 {
+  a.homepage, a.ftlink {
     color: white;
     margin: 0;
     display: inline-block;
     font-size: 1.2rem;
   }
 
-  a.homepage:link, a.homepage:visited {
+  .header-top a:link, .header-top a:visited {
     font-weight: bold;
     color: white;
     text-decoration: none;
@@ -31,7 +31,7 @@
     text-decoration: underline;
   }
 
-  h2 {
+  a.ftlink {
     float: right;
     border: solid 2px white;
     height: 21px;
@@ -39,6 +39,12 @@
     text-align: center;
     border-radius: 8px;
     margin-left: 0.5rem; 
+  }
+
+  a.ftlink:hover, a.ftlink:active {
+    font-weight: bold;
+    color: white;
+    background: grey;
   }
 
   a.login {
@@ -68,10 +74,11 @@
   span {
     font-weight: normal;
     padding-left: 1rem;
+    font-size: 1.7rem;
   }
 
   h5 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     text-align: center;
     font-weight: normal;
     margin: 0;
@@ -93,8 +100,11 @@
     margin: 0 0 2rem 0;
  }
 
- .footer {
+  .footer {
     padding: 0 0.5rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
  }
 
   h6, a.footer {
@@ -120,8 +130,8 @@
   <div class="header">
     <div class="header-top">
       <a href="" class="homepage">LEUNG PAK YU</a>
-      <h2>t</h2>
-      <h2>f</h2>
+      <a href="https://www.facebook.com/aryu1203" target="blank" class="ftlink">f</a>
+      <a href="https://twitter.com/yuleung1203" target="blank" class="ftlink">t</a>
     </div>
     <a href="" class="login">Login</a>
     <h4>LEUNG PAAK YU :<span>MY BLOG</span></h4>
@@ -133,7 +143,7 @@
     <p>After that, I know they use Chinese herbs, without added in any chemicals in the formula of the shampoo. Then I used to wash with it ...... in this month ...... for this month after that ...... I felt very comfortable after I used it. Now I use it to wash my hair everyday! I share it with my family! Come on! Come on! Come on! Let's try it out! Then I talked to my director that I wanted to take that ad on time! After finishing, this was my hair, and there are no special effects on my hair. I want to let the audience to know that, I can get such hair, and you can get such hair too!</p>
   </div>
   <div class="footer">
-    <h6>LPY &copy2015</h6>
+    <h6>LPY &copy 2015</h6>
     <a href="" class="footer">Bio</a>
     <a href="" class="footer">Contact</a>
   </div>
