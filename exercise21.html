@@ -12,11 +12,23 @@
     padding: 0.5rem;
   }
 
-  h1, h2 {
+  a.homepage, h2 {
     color: white;
     margin: 0;
     display: inline-block;
     font-size: 1.2rem;
+  }
+
+  a.homepage:link, a.homepage:visited {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+
+  a.homepage:hover, a.homepage:active {
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
   }
 
   h2 {
@@ -29,11 +41,21 @@
     margin-left: 0.5rem; 
   }
 
-  h3 {
+  a.login {
     margin: 0;
     float: right;
     font-weight: normal;
     padding: 0.5rem;
+  }
+
+ a.login:link, a.login:visited, a.footer:link, a.footer:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+  a.login:hover, a.login:active, a.footer:hover, a.footer:active {
+    color: black;
+    text-decoration: underline;
   }
 
   h4 {
@@ -68,27 +90,28 @@
 
   .content p {
     text-indent: 2rem;
-    margin: 0;
+    margin: 0 0 2rem 0;
  }
 
  .footer {
     padding: 0 0.5rem;
  }
 
-  h6, .footer p {
+  h6, a.footer {
     font-weight: normal;
     font-size: 1.2rem;
     margin: 0;
     display: inline-block;
   }  
 
-  .footer p {
+  a.footer {
     float: right;
     border: solid 2px black;
-    padding: 0.1rem;
+    padding: 0.1rem 1rem;
     margin-left: 0.5rem;
     border-bottom: 0;
     border-radius: 8px 8px 0 0;
+    color: black;
   }
 </style>
 </head>
@@ -96,11 +119,11 @@
 <body>
   <div class="header">
     <div class="header-top">
-      <h1>LEUNG PAK YU</h1>
+      <a href="" class="homepage">LEUNG PAK YU</a>
       <h2>t</h2>
       <h2>f</h2>
     </div>
-    <h3>Login</h3>
+    <a href="" class="login">Login</a>
     <h4>LEUNG PAAK YU :<span>MY BLOG</span></h4>
     <h5>Welcome</h5>
   </div>
@@ -111,8 +134,8 @@
   </div>
   <div class="footer">
     <h6>LPY &copy2015</h6>
-    <p>Bio</p>
-    <p>Contact</p>
+    <a href="" class="footer">Bio</a>
+    <a href="" class="footer">Contact</a>
   </div>
 </body>
 </html>
