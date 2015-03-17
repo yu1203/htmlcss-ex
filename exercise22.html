@@ -3,62 +3,78 @@
 <head>
 <link rel="stylesheet" href="normalize.css" media="all">
 <style>
-  html, body {
+  html, body, .content {
     height: 100%;
   }
 
   .aside {
-    width: 25%;
-    border-right: solid 2px black; 
+    width: 30%;
     float: left;
-    height: 100%;
+  }
+
+  .top {
     padding: 2rem;
-    vertical-align: baseline;
   }
 
   .profpic {
     width: 35%;
     border-radius: 50%;
-    overflow: hidden;
     box-shadow: 0 0 10px;
     float: left;
+    margin-bottom: 2rem;
   }
 
-  h2 {
+  h1 {
     float: left;
     padding: 0 1rem;
+    font-size: 1.5rem;
+  }
+
+  .aside p {
+    clear: both;
+  } 
+
+  .pic {
+    width: 90%;
+  }
+
+  h2 {   
+    text-align: center;
+    border-top: solid 2px black;
+
   }
 
   .content {
-    overflow: hidden;
     padding-left: 2rem; 
+    border-left: solid 2px black;
+    overflow: hidden;
   }
 
-  .circle p {
+  .circle {
     font-weight: bold;
     font-size: 2rem;
     margin: 1rem;
     border: solid 3px black;
-    display: block;
-    float: right;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     text-align: center;
+    line-height: 30px;
   }
 
-  h1 {
+  h3 {
     text-align: center;
     font-size: 3rem;
   }
 
-  h3 {
+  h4 {
     text-indent: 2rem;
     text-align: justify;
     font-weight: normal;
+    font-size: 1.2rem;
   }
 
-  h3, a {
+  h4, .comment {
     padding-right: 3.5rem;
   }
 
@@ -76,7 +92,7 @@
     text-decoration: none;
   }
 
-  a:hover, a:active {
+  .comment:hover, .comment:active {
     color: black;
     text-decoration: underline;
   }
@@ -85,25 +101,25 @@
 
 <body>
   <div class="aside">
-    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReJISMMhQ4_ZQ3LtEyYcQ2C3VPPnT6XhWu-F7OM1P0S5-s0edl" alt="profile-picture.jpg" class="profpic">
-    <h2>Plastic Kitty</h2>
-    <p>bbbbbbbbbbbbbbbbbbbbbb</p>
-    <p>ccccccccccccccccccccccccc</p>
-    <img src="">
-    <p>ddddd</p>
-    <div class="about">
-      <h3>About</h3>
+    <div class="top">
+      <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReJISMMhQ4_ZQ3LtEyYcQ2C3VPPnT6XhWu-F7OM1P0S5-s0edl" alt="profile-picture.jpg" class="profpic">
+      <h1>Plastic Kitty</h1>
+      <p>After almost 2 weeks, Jade Kwan visited the shop again.</p>
+      <p> The salesperson who served her last time was off duty that day.</p>
+      <img src="http://www.parisoma.com/wp-content/uploads/2013/11/wsgr.jpg" alt="random-pic" class="pic">
+      <p>Our company.</p>
+    </div>
+    <div class="bottom">
+      <h2>About</h2>
     </div>
   </div>
   <div class="content">
-    <div class="circle">
-      <p>+</p>
-    </div>
-    <h1>My Post</h1>
-    <h3>My sister had been working in a famous boutique in Pacific Place as a salesperson for many years. Many rich people and celebrities do shopping in this shop. After working for a long time, she was promoted as a senior salesperson. She had the favour of the manager because of her good working attitude. As she had a stable job and income, she planned to marry her boyfriend who had been with her for many years.</h3>
-    <h3>Throughout these years, my sister received very few complaints and she kept good relationships with many premium customers. Some days ago, Jade Kwan visited her shop and bought many things. But my sister was not the one to serve her.</h3>
+    <a href="#" class="circle">+</a>
+    <h3>My Post</h3>
+    <h4>My sister had been working in a famous boutique in Pacific Place as a salesperson for many years. Many rich people and celebrities do shopping in this shop. After working for a long time, she was promoted as a senior salesperson. She had the favour of the manager because of her good working attitude. As she had a stable job and income, she planned to marry her boyfriend who had been with her for many years.</h4>
+    <h4>Throughout these years, my sister received very few complaints and she kept good relationships with many premium customers. Some days ago, Jade Kwan visited her shop and bought many things. But my sister was not the one to serve her.</h4>
     <input type="button" value="Like"></input>
-    <a href="#">Comment</a>
+    <a href="#" class="comment">Comment</a>
   </div>
 </body>
 </html>
