@@ -45,12 +45,16 @@
     border-top: solid 2px black;
   }
 
+  .content-container {
+    border-left: solid 2px black;
+    overflow: hidden;
+  }
+
   .content {
     overflow: hidden;
     margin: auto;
     max-width: 800px;
     padding: 2rem;
-    border-left: solid 2px black;
   }
 
   .circle {
@@ -117,13 +121,15 @@
       <h2>About</h2>
     </div>
   </div>
-  <div class="content">
-    <a href="#" class="circle">+</a>
-    <h3>My Post</h3>
-    <h4>My sister had been working in a famous boutique in Pacific Place as a salesperson for many years. Many rich people and celebrities do shopping in this shop. After working for a long time, she was promoted as a senior salesperson. She had the favour of the manager because of her good working attitude. As she had a stable job and income, she planned to marry her boyfriend who had been with her for many years.</h4>
-    <h4>Throughout these years, my sister received very few complaints and she kept good relationships with many premium customers. Some days ago, Jade Kwan visited her shop and bought many things. But my sister was not the one to serve her.</h4>
-    <input type="button" value="Like"></input>
-    <a href="#" class="comment">Comment</a>
+  <div class="content-container">
+    <div class="content">
+      <a href="#" class="circle">+</a>
+      <h3>My Post</h3>
+      <h4>My sister had been working in a famous boutique in Pacific Place as a salesperson for many years. Many rich people and celebrities do shopping in this shop. After working for a long time, she was promoted as a senior salesperson. She had the favour of the manager because of her good working attitude. As she had a stable job and income, she planned to marry her boyfriend who had been with her for many years.</h4>
+      <h4>Throughout these years, my sister received very few complaints and she kept good relationships with many premium customers. Some days ago, Jade Kwan visited her shop and bought many things. But my sister was not the one to serve her.</h4>
+      <input type="button" value="Like"></input>
+      <a href="#" class="comment">Comment</a>
+    </div>
   </div>
 </body>
 </html>
