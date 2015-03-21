@@ -39,7 +39,6 @@
     float: left;
     margin: 0;
     line-height: 40px;
-    border-right: solid 2px black;
     font-weight: bold;
     padding: 0 2rem 0 0.5rem;
   }
@@ -47,15 +46,13 @@
   .searchbar img {
     width: 25px;
     float: right;
+    border-left: solid 2px black;
+    padding: 0.5rem;
   }
 
   .search {
     width: 90%;
-    margin: 0.5rem;
-  }
-
-  .search p {
-    padding-right: 7.9rem; 
+    margin: 0.7rem;
   }
 
   .name {
@@ -89,12 +86,15 @@
     border-left: solid 2px black;
     border-right: solid 2px black;
     width: 75%;
-    overflow: hidden;
     min-width: 800px;
   }
 
   .left, .right {
     float: left;
+  }
+
+  .left {
+    min-width: 240px;
     width: 30%;
   }
 
@@ -112,7 +112,6 @@
 
   .right {
     border-left: solid 2px black;
-    float: left; 
     width: 70%;
     box-sizing: border-box;
   }
