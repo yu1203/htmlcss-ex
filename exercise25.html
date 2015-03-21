@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="normalize.css" media="all">
+<style>
+  html, body, .content-container, .content, .right {
+    height: 100%;
+  }
+
+  .title-bar-container {
+    border-bottom: solid 2px black;
+    padding: 0 2rem;
+  }
+
+  .title-bar {
+    padding: 0.5rem;
+    overflow: hidden;
+    width: 75%;
+    margin: auto;
+    min-width: 800px;
+  }
+
+  .title-bar > p, .search-bar, .name {
+    border: solid 2px black;
+    float: left;
+    border-radius: 10px;
+  }
+
+  .title-bar > p {
+    font-size: 2rem;
+    text-align: center;
+    width: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    margin: 0 1rem 0 0;
+  }
+
+  .search-bar p {
+    float: left;
+    margin: 0;
+    line-height: 40px;
+    font-weight: bold;
+    padding: 0 2rem 0 0.5rem;
+  }
+
+  .search-bar img {
+    width: 25px;
+    float: right;
+    border-left: solid 2px black;
+    padding: 0.5rem;
+  }
+
+  .inbox-search {
+    width: 90%;
+    margin: 0.7rem;
+  }
+
+  .name {
+    background: lightgrey;
+    height: 40px;
+    float: right;
+    padding: 0 0.5rem;
+  }
+
+  .name img {
+    width: 35px;
+    background: white;
+    float: left;
+    border: solid 1px black;
+  }
+
+  .name p {
+    float: left;
+    font-weight: bold;
+    margin: 0;
+    line-height: 40px;
+    padding: 0 1rem;
+  }
+
+  .content-container {
+    margin: 0 2rem;
+  }
+
+  .content {
+    margin: auto;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+    width: 75%;
+    min-width: 800px;
+  }
+
+  .left, .right {
+    float: left;
+  }
+
+  .left {
+    min-width: 240px;
+    width: 30%;
+  }
+
+  h1, h2 {
+    border-bottom: solid 2px black;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  h1 span {
+    font-weight: normal;
+    padding-left: 1rem; 
+  }
+
+  .search-bar-container {
+    border-bottom: solid 2px black;
+    overflow: hidden;
+  }
+
+  .conversation {
+    border-bottom: solid 1px black;
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  .conversation img {
+    border: solid 1px black;
+    width: 70px;
+    float: left;
+    margin-right: 0.5rem;
+  }
+
+  p span {
+    float: right;
+  }
+
+  .right {
+    border-left: solid 2px black;
+    width: 70%;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .right p {
+    font-size: 2rem;
+  }
+
+  .conversation-box-container {
+    border-top: solid 2px black;
+    padding: 1rem;
+    min-width: 527px;
+    position: absolute;
+    bottom: 0;
+    right: 0
+    left: 0;
+  }
+
+  .conversation-box {
+    border: solid 1px black;
+  }
+
+  .conversation-box p, h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 0.5rem;
+  }
+
+  .emoji {
+    float: right;
+    width: 30px;
+    padding: 0.5rem;
+  }
+
+  .textbox {
+    border-bottom: solid 1px black;
+    padding-bottom: 5rem;
+  }
+
+  .add-file-img, .add-photo-img {
+    width: 30px;
+    vertical-align: top;
+    padding-top: 0.5rem;
+  }
+
+  .add-file-img {
+    padding-left: 0.5rem;
+    padding-top: 0.8rem;
+  }
+
+  h3 {
+    font-weight: normal;
+    border-right: solid 1px black;
+  }
+</style>
+</head>
+
+<body>
+  <div class="title-bar-container">
+    <div class="title-bar">
+      <p>f</p>
+      <div class="search-bar">
+        <p>Search Facebook</p>
+        <a href="#">
+          <img src="http://www.iconpng.com/png/ivista2/search.png" alt="search">
+        </a>
+      </div>
+      <div class="name">
+        <img src="https://4rchiviz4rd.files.wordpress.com/2008/10/keroro-gunso.png" alt="profile-picture">
+        <p>LPY</p>
+      </div>
+    </div>
+  </div>
+  <div class="content-container">
+    <div class="content">
+      <div class="left">
+        <h1>Inbox<span> Other</span></h1>
+        <div class="search-bar-container">
+          <div class="search-bar inbox-search">
+            <p>Search</p>
+            <a href="#">
+              <img src="http://www.iconpng.com/png/ivista2/search.png" alt="search">
+            </a>
+          </div>
+        </div>
+        <div class="conversation">
+          <img src="https://40.media.tumblr.com/b3370b0cf000477cdce1ba4c3f7d4140/tumblr_n95wy5hjwr1sgborvo1_500.jpg" alt="Aryu-Quinto">
+          <p>Aryu Quinto<span>8:41pm</span></p>
+          <p>Hello</p>
+        </div>
+        <div class="conversation">
+          <img src="https://40.media.tumblr.com/ce293bc36e36f68ea5b776bd2a8b6f15/tumblr_mwfae4x2Sw1sj5y5bo3_500.jpg" alt="Evita-Shih">
+          <p>Evita Shih<span>7:54pm</span></p>
+          <p>Hi</p>
+        </div>
+        <div class="conversation">
+          <img src="http://partners.atmovies.com.tw:8080/admin/news/photo/pics/27548397040215042012040220.jpg" alt="Peter">
+          <p>Peter<span>6:00pm</span></p>
+          <p>Good day</p>
+        </div>
+        <div class="conversation">
+          <img src="https://40.media.tumblr.com/0b2aaa89c56260e05b2b52d1f2b08114/tumblr_nlesr6Gvce1tm9ijwo1_500.png" alt="Josephine">
+          <p>Josephine<span>5:59pm</span></p>
+          <p>Hello</p>
+        </div>
+      </div>
+      <div class="right">
+        <h2>Leung Pak Yu</h2>
+        <div class="conversation-box-container">
+          <div class="conversation-box">
+            <div class="textbox">
+              <p>Write a reply...</p>
+              <img src="http://cdn.shopify.com/s/files/1/0185/5092/products/persons-0019.png?v=1369544043" alt="emoji" class="emoji">
+            </div>
+            <img src="http://hk.wahtat.com/images/201207/goods_img/2378_P_1343691090380.JPG" alt="add-file" class="add-file-img">
+            <h3>Add Files</h3>
+            <img src="http://thealevillage.com/wp-content/uploads/2012/08/camera_icon.png" alt="add-photo" class="add-photo-img">
+            <h3>Add Photos</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
